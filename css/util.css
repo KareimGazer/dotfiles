@@ -1,0 +1,34 @@
+/* ------------------- */
+/* Utility classes     */
+/* Utility classes do one thing and do it well  (single responsibility principle) */
+/* ------------------- */
+
+.flex {
+    display: flex;
+    gap: var(--gap, 1rem);
+}
+
+.grid {
+    display: grid;
+    gap: var(--gap, 1rem);
+}
+
+.container {
+    padding-inline: 2em; /* === padding: 0 2rem; */
+    margin-inline: auto;
+    max-width: 80rem; /* max-width: var(--max-width, 80rem); */
+}
+
+/* screen reader only */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    /* added line */
+    border: 0;
+}
